@@ -1,10 +1,14 @@
 import os
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+print("BOT_TOKEN:", BOT_TOKEN)
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
 MY_USER_ID = int(os.getenv("MY_USER_ID", "0"))
 
 KEYWORDS = ["спам", "оплата", "взлом", "жалоба"]
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+if not BOT_TOKEN:
+    raise ValueError("Bot token is missing!")
 
 # Обработчик сообщений
 def handle_message(update, context):
