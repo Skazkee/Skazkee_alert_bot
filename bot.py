@@ -5,7 +5,7 @@ from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTyp
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 MY_USER_ID = int(os.getenv("MY_USER_ID", "0"))
 
-KEYWORDS = ["спам", "оплата", "взлом", "жалоба", "Куплю", "Продам", "продам"]
+KEYWORDS = ["спам", "оплата", "взлом", "жалоба"]
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message is None or update.message.text is None:
