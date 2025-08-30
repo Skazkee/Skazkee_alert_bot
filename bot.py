@@ -13,7 +13,7 @@ print("BOT_TOKEN:", BOT_TOKEN)
 
 MY_USER_ID = int(os.getenv("MY_USER_ID", "0"))
 
-KEYWORDS = ["спам", "оплата", "взлом", "жалоба", "продам","Продам"]
+KEYWORDS = ["спам", "оплата", "взлом", "жалоба", "продам","Продам", "Продаю", "продаю", "Go-pro", "Go", "Го", "Гоу", "гоу"]
 
 # Обработчик сообщений
 def handle_message(update, context):
