@@ -1,4 +1,9 @@
 import os
+import sys
+print(f"Python version: {sys.version}")
+print(f"Installing dependencies...")
+!pip show python-telegram-bot
+
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
 
